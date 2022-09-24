@@ -77,24 +77,11 @@ p{
 
 .dates{
     font-size: 1.4rem;
-    
 }
 
-/* .announcevideo{
-    text-align: center;
-}
-
-.announcevideoplayer{
-    width: 50%; 
-    height: 300px; 
-    overflow: auto;
-} */
-
-
-/* ----------------- Special footer -----------------*/
-
-Footer{
-    /* position: fixed; */
+.dates_disclaimer{
+    padding-top:30px;
+    font-size: 1.2rem;
 }
 
 /* --------------------- modal ------------------------*/
@@ -162,6 +149,9 @@ Footer{
     }
     .dates{
     font-size: 1.1rem;
+    }
+    .dates_disclaimer{
+        font-size: 0.9rem;
     }
     .announcevideoplayer{
         width: 80%; 
