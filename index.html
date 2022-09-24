@@ -23,8 +23,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
     <link rel="stylesheet" href="static/css/style.css" type="text/css">
     <link rel="stylesheet" href="static/css/scrolltotop.css" type="text/css">
-    <!-- <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css"> -->
-    <script src="static/js/redirect.js"></script>
     <script src="static/js/scrolltotop.js"></script>
     <script src="static/js/consent_cookie.js"></script>
 
@@ -94,25 +92,10 @@
                     <p class="landingsubparagraph">
                         What's in the Brew Kettle/Announcements 2022?
                     </p>
-                    <p class="dates">
-                        <p>
-                            <p>
-                                The Legandary Cropathon/Weigh-in @Dawkins Brewery - <b>Monday 12th September 5-8pm</b>
-                            </p>
-                            <p>
-                                Brew Day - <b>Wednesday 14th September</b>
-                            </p>
-                            <p>
-                                Easton Promise launch Party @Dawkins Brewery Lawnwood Rd - <b>Friday 21st October 5-9pm</b>
-                            </p>
-                        </p> 
-                       
-                    </p>
-                    <p>                
-                        <p class="dates">
-                           <i> Dates are subject to change. For updates keep an eye on your inbox. If you're not signed up to the mailing list please do so <a href="pages/subscribe.html"><strong>here</strong></a> to stay up to date with all the hoppy action!</i>
-                        </p>
-                    </p>
+                    <!-- dates and news injected from Javascript -->
+                      <div class="dates" id="news"></div>
+                        <div class="dates" id="events_and_dates"></div>              
+                      <div id="dates_disclaimer"></div>
                     <hr color="gray">
                     <p class="landingsubparagraph">
                         So what's it all about?
@@ -211,16 +194,17 @@
               <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
                   class="fab fa-twitter-square footer-icon" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fab fa-instagram-square footer-icon" aria-hidden="true"></i></a>
-              <div class="copyright-footer">Copyright-&copy;
-                <script>document.write(new Date().getFullYear()); </script> East Bristol Hops <a class="footer-tc"
-                  href="pages/termsofuse.html" onclick="passedpage('index')">-Terms & Consitions-Privacy Policy</a></div>
+              <div class="copyright-footer">Copyright-&copy; <span id="footeryear"></span>
+                 East Bristol Hops <a class="footer-tc"
+                  href="pages/termsofuse.html">-Terms & Consitions-Privacy Policy</a></div>
             </div>
           </div>
         </div>
       </footer>
     
  <!--=============================================== Java Script ===================================================-->
- <!-- <script src="static/js/landing.js"></script>
- <script src="static/js/sessioncookie.js"></script> -->
+ <script src="static/newsEvents/news_event_info.js"></script>
+ <script src="static/js/newsandevents.js"></script>
+ <script src="static/js/footerdate.js"></script>
 </body>
 </html>

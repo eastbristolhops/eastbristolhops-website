@@ -22,7 +22,6 @@
     <link rel="shortcut icon" type="image/x-icon" href="../static/favicon.ico">
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <link rel="stylesheet" href="../static/css/scrolltotop.css" type="text/css">
-    <script src="../static/js/redirect.js"></script>
     <script src="../static/js/scrolltotop.js"></script>
 
     <link rel="stylesheet" href="../static/css/wiki.css" type="text/css">
@@ -127,31 +126,31 @@
                     for most hop varieties.
                 </p>
     
-                <!-- This section injects the videos from javascript -->
-                <h3 class="paragarphheading" id="soilphheading">How to test soil PH</h3>
-                <div class="showvidbutton">
-                    <input class="btn btn-secondary buttonsclick" type="button" id="showvidbutton" onclick="showvideos()"
-                        value="Show Videos"></input>
-                </div>
-                <div class="videos" id="videos">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="soilphvideo">
-                                <div class="videoheading" id="videoheading">Torsi Wooldridge on soil PH</div><iframe
-                                    class="soilphvideoplayer" src="https://www.youtube-nocookie.com/embed/h-IsLZCmWEY" 
-                                    frameborder="1" Access-Control-Allow-Origin:* allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="soilphvideo">
-                                <div class="videoheading" id="videoheading">How to use a PH meter</div>
-                                <iframe class="soilphvideoplayer" src="https://www.youtube-nocookie.com/embed/Xu2qVNiG300"
-                                    frameborder="1" allow="encrypted-media; gyroscope; picture-in-picture;"allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr color="white">
+                  <!-- This section injects the videos from javascript -->
+                  <h3 class="paragarphheading" id="soilphheading">How to test soil PH</h3>
+                  <div class="showvidbutton">
+                      <input class="btn btn-secondary buttonsclick" type="button" id="showvidbutton" onclick="showvideos()"
+                          value="Show Videos"></input>
+                  </div>
+                  <div class="videos" id="videos">
+                      <div class="row">
+                          <div class="col-sm-6">
+                              <div class="soilphvideo">
+                                  <div class="videoheading" id="videoheading">Torsi Wooldridge on soil PH</div><iframe
+                                      class="soilphvideoplayer" src="https://www.youtube-nocookie.com/embed/h-IsLZCmWEY" 
+                                      frameborder="1" Access-Control-Allow-Origin:* allow="encrypted-media; picture-in-picture" allowfullscreen></iframe>
+                              </div>
+                          </div>
+                          <div class="col-sm-6">
+                              <div class="soilphvideo">
+                                  <div class="videoheading" id="videoheading">How to use a PH meter</div>
+                                  <iframe class="soilphvideoplayer" src="https://www.youtube-nocookie.com/embed/Xu2qVNiG300"
+                                      frameborder="1" allow="encrypted-media; gyroscope; picture-in-picture;"allowfullscreen></iframe>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <hr color="white">
     
                 <div class="row">
                     <div class="col-sm-8 stepstext">
@@ -328,8 +327,8 @@
               <a href="https://twitter.com/eastbristolhops?lang=en" target="_blank"><i
                   class="fab fa-twitter-square footer-icon" aria-hidden="true"></i></a>
               <a href="#" target="_blank"><i class="fab fa-instagram-square footer-icon" aria-hidden="true"></i></a>
-              <div class="copyright-footer">Copyright-&copy;
-                <script>document.write(new Date().getFullYear()); </script> East Bristol Hops <a class="footer-tc"
+              <div class="copyright-footer">Copyright-&copy; <span id="footeryear"></span>
+                 East Bristol Hops <a class="footer-tc"
                   href="termsofuse.html">-Terms & Consitions-Privacy Policy</a></div>
             </div>
           </div>
@@ -340,6 +339,7 @@
 <script src="../static/js/wiki.js"></script>
 <script src="../static/js/wiki-textpage.js"></script>
 <script src="../static/js/wiki-transitions.js"></script>
+<script src="../static/js/footerdate.js"></script>
 
 </body>
 </html>
