@@ -26,15 +26,6 @@ body{
     border-radius: 15px;
 }
 
-.clicktag{
-    color: white;
-}
-
-.clicktag:hover{
-    text-decoration: none;
-    color: #F79767;
-}
-
 .linksButtons{
     color: #F79767;;
 }
@@ -60,7 +51,7 @@ body{
 
 .oldcrewstory{
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .subheadingpromisediv{
@@ -69,11 +60,11 @@ body{
 }
 
 .abouthebrew{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .brewrecipe{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .promisediv{

@@ -9,7 +9,7 @@ const cookieStorage = {
     setItem: (key, value) =>{
         let d = new Date();
         d.setTime(d.getTime() + (100 * 24 * 60 * 60 * 1000));
-        var expires = "expires=" + d.toUTCString();
+        let expires = "expires=" + d.toUTCString();
         document.cookie = key + "=" + value + ";" + expires + ";path=/";
     },
 };
@@ -17,13 +17,14 @@ const cookieStorage = {
 const consentPropertyName = 'gdpr_consent';
 const newsPropertyName = 'signup';
 const shouldShowPopup = () => !cookieStorage.getItem(consentPropertyName);
-var shouldShowNewsPop = () => cookieStorage.getItem(consentPropertyName);
+let shouldShowNewsPop = () => cookieStorage.getItem(consentPropertyName);
 const saveToStorage = (cookieName) => cookieStorage.setItem(cookieName, true);
 
 window.onload = () =>{
     const consentPopup = document.getElementById('consent-popup');
     const acceptBtn = document.getElementById('accept');
-    const newsAcceptBtn = document.getElementById('newsAcpt');
+    const newsAcceptBtn1 = document.getElementById('newsAcpt1');
+    const newsAcceptBtn2 = document.getElementById('newsAcpt2');
 
     const acceptfn = event => {
         saveToStorage(consentPropertyName);
@@ -40,11 +41,12 @@ window.onload = () =>{
     const acceptNews = event => {
         saveToStorage(newsPropertyName);
     };
+
     let checkNewsCookie = cookieStorage.getItem(newsPropertyName);
     if (!checkNewsCookie){ 
-    newsAcceptBtn.addEventListener('click', acceptNews);
+        newsAcceptBtn1.addEventListener('click', acceptNews);
+        newsAcceptBtn2.addEventListener('click', acceptNews);
     }
-    
 };
 
 
