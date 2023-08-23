@@ -35,10 +35,10 @@ body{
 
 p{
     text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
-.wikilinkinline{
+.inline{
     color: black;
     text-decoration: none;
 }
