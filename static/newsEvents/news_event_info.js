@@ -1,5 +1,9 @@
 "use strict";
 
+/*
+     To add news or events lay each stroy out in an array format put the story within quotes and add a comma "<story>", 
+*/
+
 let news =[
     // "change this info and it will appear on the landing page under announcements",
 ]
